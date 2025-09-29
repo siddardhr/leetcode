@@ -1,20 +1,39 @@
 # Create a list of your email, name, gender and age, then print your name?
-
+mydetails = ['name','email','gender',40]
+print(mydetails[0])
 
 # Create a list of your email, name, gender and age, then print your name and age?
-
+mydetails = ['name','email','gender',40]
+print(f'age: {mydetails[3]}, name: { mydetails[3]}')
 
 # Create a list of your email, name, gender and age, then update your email and print index of all elements in the list?
-
+mydetails = ['name','email','gender',40]
+mydetails[1] = 'updatedemail'
+for index, element in enumerate(mydetails):
+  print(index, element)
 
 # Create a list of your email, name, gender and age, then append your password and insert your username to the list at index 1?  
-
+mydetails = ['name','email','gender',40]
+mydetails.append('password')
+mydetails.insert(1,'username')
+print(mydetails)
 
 # Create a list of your email, name, gender and age, then create another list which contains your birth date, month, year and extend/add it to former list? 
-
+mydetails = ['name','email','gender',40]
+birthdetails = [12,'month',1901]
+mydetails.extend(birthdetails)
+print(mydetails)
 
 # Create a list of your email, name, gender and age, then if the email is not gmail delete it, if the gender is male delete all elements from the list?  
+mydetails = ['name','a@yahoo.com','male',40]
 
+if not mydetails[1].endswith('gmail.com'):
+  del mydetails[1]
+
+if mydetails[1] == 'male':
+  mydetails.clear()
+
+print(mydetails)
 
 # Create a list of name of grade 10 students then sort them from A to Z and Z to A? 
 
