@@ -105,9 +105,7 @@ else:
 # Find factorial (n!) of given number from user?
 
 
-# Print all perfect square numbers from 0 to 100?
-
-
+# Print all perfect square numbers from 0 to 10?
 # Print all prime numbers from 0 to 100?
 
 
