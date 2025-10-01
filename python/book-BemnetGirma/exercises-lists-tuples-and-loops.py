@@ -93,23 +93,49 @@ else:
     print("2 was not found in the list.")
 
 
-# Create a tuple of random three numbers 1 to 10, then if 2 is in the tuple sort the tuple else reverse sort then unpack the tuple? 
+# Create a tuple of random three numbers 1 to 10, then if 2 is in the tuple sort the tuple else reverse sort then unpack the tuple?
 
+import random
+numbers = tuple(random.randint(1, 10) for x in range(3))
+a, b, c = (sorted(numbers) if 2 in numbers else sorted(numbers, reverse = True))
+
+print(a, b, c)
 
 # Print all multiples of 7 from 1 to 100 using while loop?
 
+multiple = 7
+while multiple < 101 :
+  print(multiple)
+  multiple = multiple + 7
 
 # Print Fibonacci Sequence till 50? A Fibonacci Sequence is a series of numbers where each number is the sum of the two numbers that precede it. 0, 1, 1, 2, 3, 5, 8, …
 
-
+a, b = 0, 1
+while b < 50:
+  a, b = b, a + b
+  print(a)
+  
 # Find factorial (n!) of given number from user?
 
+userinput = int(input("Enter your chioce of number: "))
+
+factorial = 1 
+while userinput > 1:
+    factorial = factorial * userinput
+    userinput = userinput - 1
+
+print(factorial)
 
 # Print all perfect square numbers from 0 to 10?
-# Print all prime numbers from 0 to 100?
+
+for i in range(11):
+  print i *  i
+
+#Print all prime numbers from 0 to 100?
 
 
-# Find sum of all prime numbers from 0 to 100?
+#Find sum of all prime numbers from 0 to 100?
+
 
 
 # Print all vowels in a given string from user?
