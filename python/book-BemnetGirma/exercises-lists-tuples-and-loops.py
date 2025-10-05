@@ -131,7 +131,7 @@ print(factorial)
 for i in range(11):
   print i *  i
 
-#Print all prime numbers from 0 to 100?
+#Print all prime numbers from 0 to 100
 
 
 #Find sum of all prime numbers from 0 to 100?
