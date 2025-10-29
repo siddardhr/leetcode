@@ -131,37 +131,101 @@ print(factorial)
 for i in range(11):
   print i *  i
 
-#Print all prime numbers from 0 to 100
+#Print all prime numbers from 0 to 100? 
 
+for n in range(2, 100):
+  for i in range(2, n - 1):
+    if n % i == 0:
+      break
+  else:
+    print(n)
 
 #Find sum of all prime numbers from 0 to 100?
 
+primelist = []
 
+for n in range(1, 100):
+  for i in range(2, n - 1):
+    if n % i == 0:
+      break
+  else:
+    primes.append(n)
+
+print(sum(primes))
 
 # Print all vowels in a given string from user?
 
+vowels = ['a','e','i','o','u']
+userinput = input("Enter your string: ")
+for char in userinput:
+  if char in vowels:
+    print(char, end = ' ')
 
 # Print all prime numbers from 1 to 100 except numbers divisible by 3?
 
+for i in range(2, 100):
+  for n in range(2, i):
+    if i % n == 0:
+      break
+  else:
+    if i % 3 == 0:
+      print(i)
 
 # Print all even digits in a number from user?
 
+usernumber = input("Enter your choice of number: ")
+for char in usernumber:
+  if int(char) % 2 == 0:
+    print(char, end = ' ')
 
-# Print all vowels in a given string from user?
+# Create a list using list comprehension that includes only the prime numbers from the original list?
 
-
-# Create a list using list comprehension that includes only the prime numbers from the original list? 
-
+numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+primenumbers = [num for num in numbers if all(num % i != 0 for i in range(2,i))]
+print(primes)
 
 # Draw an Isosceles Triangle /Christmas Tree/ pattern which looks like as follows. Enter the number of rows: 4
 
+rows = int(input("Enter the number of rows for the tree: "))
 
-# Draw Life Span /Hour Glass/ pattern which looks like as follows Enter the number of rows: 4
+for i in range(rows):
+    spaces = rows - i - 1
+    stars = 2 * i + 1
+    print(' ' * spaces + '*' * stars)
 
 
-# Build a 6 by 6 multiplication table which looks like as follows Enter the number of rows: 6
+# Draw Life Span /Hour Glass/ pattern which looks like as follows Enter the number of rows: 4?
+
+rows = int(input("Enter the number of rows for the hourglass: "))
+
+for i in range(rows, 0, -1):
+    spaces = rows - i
+    stars = 2 * i - 1
+    print(' ' * spaces + '*' * stars)
+
+for i in range(2, rows + 1):
+    spaces = rows - i
+    stars = 2 * i - 1
+    print(' ' * spaces + '*' * stars)
 
 
-# Draw an Alphabetical Triangle pattern which looks like as follows. Enter the number of rows: 4
+# Build a 6 by 6 multiplication table which looks like as follows Enter the number of rows: 6?
+
+n = int(input("Enter the number of rows: "))
+
+for i in range(1, n + 1):
+    for j in range(1, n + 1):
+        print(f"{i * j:3}", end=' ')  # :3 formats spacing
+    print()
+
+# Draw an Alphabetical Triangle pattern which looks like as follows. Enter the number of rows: 4?
+
+n = int(input("Enter the number of rows: "))
+
+for i in range(1, n + 1):
+    for j in range(i):
+        print(chr(65 + j), end='')
+    print()
+
 
 
