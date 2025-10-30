@@ -1,4 +1,4 @@
-#Create set of files ~ ( Img_01.png, Avatar.mp4 ), add new file ‘Track01.mp3’ then Rename ‘Track01.mp3’ to ‘Music01.mp3’, finally Copy all files to new set (Folder)?
+#Create set of files ~ ( Img_01.png, Avatar.mp ), add new file ‘Track01.mp3’ then Rename ‘Track01.mp3’ to ‘Music01.mp3’, finally Copy all files to new set (Folder)?
 
 
 #Create set of files ~ ( Img_01.png, Pic.jpeg, Avatar.mp4 ), then delete all image files?
